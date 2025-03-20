@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.traffic-light {
+    width: 100px;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: background 0.3s;
+}
+
+.red.active { background-color: red; }
+.yellow.active { background-color: yellow; }
+.green.active { background-color: green; }
